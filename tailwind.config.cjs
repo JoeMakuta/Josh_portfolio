@@ -15,7 +15,7 @@ module.exports = {
       backgroundImage: {
         'left_bg': "url('/src/assets/object-5-1-300x274.png')",
         'right_bg': "url('/src/assets/color-1-133x150.png')",
-        'main_bg': "url('/src/assets/Back_Portfolio.png')",
+        'main_bg': "url('/src/assets/Back_Portfolio1.png')",
 
 
       }
