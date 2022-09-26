@@ -6,6 +6,7 @@ import Body_1_alter from './components/body_1'
 import Body_2 from './components/Body_2'
 import Body_3 from './components/body_3'
 import Body_4 from './components/body_4'
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Body_2 />
       <Body_3 />
       <Body_4 />
+
+      <Footer />
     </div>
   )
 }
