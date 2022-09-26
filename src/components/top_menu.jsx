@@ -1,7 +1,7 @@
 
-export const btn_styles = " border-[1px] border-main_color rounded-full p-3 hover:bg-main_color hover:text-white transition-all delay-75 "
+export const btn_styles = " border-[1px] border-main_color rounded-full p-3 hover:bg-main_color hover:text-white  active:bg-white "
 
-export const btn_inverted_styles = " border-[1px] text-white hover:bg-inherit hover:text-inherit border-main_color rounded-full p-3 bg-main_color  transition-all delay-75 "
+export const btn_inverted_styles = " border-[1px] text-white hover:bg-inherit hover:text-inherit border-main_color rounded-full p-3 bg-main_color   active:bg-white "
 
 
 const menu_links = [
@@ -25,9 +25,9 @@ const menu_links = [
 
 const TopMenu = () => {
    return (
-      <div className=" flex justify-center items-center gap-[40%] w-full mt-7 ">
+      <div className=" flex justify-between items-center gap-[30%] w-[90%] ml-auto mr-auto">
          <a href=""> <p className=" font-bold text-xl  ">Josue Makuta</p> </a>
-         <div className="flex gap-[3rem] justify-center items-center " >
+         <div className="flex gap-[50px] justify-center items-center " >
             {
                menu_links.map((element, index) => {
                   return (
@@ -36,7 +36,7 @@ const TopMenu = () => {
                })
             }
             <button className={btn_styles} >
-               Download<span className=" font-bold ">CV</span>
+               Download<span className=" font-bold "> CV</span>
             </button>
 
          </div>
