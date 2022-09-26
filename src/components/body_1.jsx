@@ -78,9 +78,9 @@ export const Main_body = () => {
 }
 
 
-export  const Body_1 = () => {
+export const Body_1 = () => {
    return (
-      <div className=" flex flex-col justify-between w-full h-screen pt-6 bg-main_bg bg-cover bg-opacity-50 ">
+      <div className=" flex flex-col justify-between w-full h-screen pt-6 bg-main_bg bg-cover">
          <TopMenu />
          <Main_body />
       </div>

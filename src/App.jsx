@@ -7,6 +7,7 @@ import Body_2 from './components/Body_2'
 import Body_3 from './components/body_3'
 import Body_4 from './components/body_4'
 import Footer from './components/footer'
+import Body_5 from './components/body_5'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Body_2 />
       <Body_3 />
       <Body_4 />
-
+      <Body_5 />
       <Footer />
     </div>
   )
