@@ -1,3 +1,4 @@
+import { btn_styles } from "./top_menu"
 
 
 
@@ -22,6 +23,7 @@ const Contact_form = () => {
          </div>
          <Input_field width='80' label='Email' placeholder='makutajosue@gmail.com' />
          <Input_field width='80' height="[300px]" label='Comment' placeholder='' />
+         <button className={btn_styles + 'w-full'} >Send</button>
       </div>
    )
 }
