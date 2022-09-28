@@ -1,18 +1,22 @@
 
+import quality_icon_1 from  '../assets/pixel-perfect-1.png'
+import quality_icon_2 from  '../assets/hight-quality-1.png'
+import quality_icon_3 from  '../assets/awesome-data-1.png'
+
 
 export const qualities = [
    {
-      icon: '/src/assets/pixel-perfect-1.png',
+      icon: quality_icon_1,
       label: 'Save Money',
       text: 'Most common methods for designing websites that work well on desktop is responsive and adaptive design',
    },
    {
-      icon: '/src/assets/hight-quality-1.png',
+      icon: quality_icon_2,
       label: 'Hight Quality',
       text: 'Most common methods for designing websites that work well on desktop is responsive and adaptive design',
    },
    {
-      icon: '/src/assets/awesome-data-1.png',
+      icon: quality_icon_3,
       label: 'Awesome Ideas',
       text: 'Most common methods for designing websites that work well on desktop is responsive and adaptive design',
    },

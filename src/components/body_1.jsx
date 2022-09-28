@@ -59,7 +59,7 @@ export const Left_body_1 = () => {
                {
                   social_media.map((elt, index) => {
                      return (
-                        <a key={index} href={elt.link} className='opacity-70 hover:opacity-100' >{elt.icon}</a>
+                        <a key={index} href={elt.link} target="__blank" className='opacity-70 hover:opacity-100' >{elt.icon}</a>
                      )
                   })
                }
