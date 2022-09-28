@@ -1,6 +1,7 @@
 import TopMenu, { btn_inverted_styles, btn_styles } from "./top_menu"
 import { MdOutlineWavingHand } from 'react-icons/md'
 import { BsFacebook, BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs'
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import main_img from "../assets/IMG_3726_okay-removebg-preview.png"
 
@@ -29,15 +30,15 @@ export const social_media = [
 
 export const Right_body_1 = () => {
    return (
-      <div className="flex justify-start ">
-         <img src={main_img} className="w-[900px]  " alt="" />
+      <div className="flex h-full w-[45%] justify-start ">
+         <img src={main_img} className='w-full' alt="" />
       </div>
    )
 }
 
 export const Left_body_1 = () => {
    return (
-      <div className="flex flex-col gap-9  ">
+      <div className="flex flex-col w-[50%] justify-center h-full gap-9  ">
          <div className=" flex gap-1" >
             <p>Hi,</p>
             <MdOutlineWavingHand size={25} />
@@ -50,9 +51,10 @@ export const Left_body_1 = () => {
             I'm a full stack web developper and Ux designer based in DRC, and I'm very passionate and dedicated to my work.
          </p>
          <div className="flex items-center gap-4">
-            <button className={btn_inverted_styles + 'w-[40%]'} >
+            <AnchorLink href="#body_3" className={btn_inverted_styles + ' flex items-center justify-center w-[40%]'} ><button  >
                About
             </button>
+            </AnchorLink>
             <div className=" flex justify-center items-center gap-4 " >
                {
                   social_media.map((elt, index) => {
