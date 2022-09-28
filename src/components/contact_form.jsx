@@ -1,8 +1,5 @@
 import { btn_styles } from "./top_menu"
 
-
-
-
 const Input_field = (props) => {
    const input_styles = 'block p-3 outline-none w-[' + props.width + '%] h-' + props.height
    return (
@@ -12,7 +9,6 @@ const Input_field = (props) => {
       </div>
    )
 }
-
 
 const Contact_form = () => {
    return (

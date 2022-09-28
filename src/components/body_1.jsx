@@ -89,7 +89,7 @@ export const Body_1 = () => {
 
 const Body_1_alter = () => {
    return (
-      <div className=" bg-white ">
+      <div id="body_1" className=" bg-white ">
          <Body_1 />
       </div>
    )

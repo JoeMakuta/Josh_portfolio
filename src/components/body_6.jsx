@@ -3,7 +3,7 @@ import Address from "./address"
 
 const Body_6 = () => {
    return (
-      <div className=" flex flex-col items-center justify-center pt-20 pb-20 gap-10" >
+      <div id="body_6" className=" flex flex-col items-center justify-center pt-20 pb-20 gap-10" >
          <div className="text-center">
             <p className=" text-xs font-bold " >CONTACT ME</p>
             <p className=" text-4xl text-main_color font-semibold " >I want to hear from you !</p>

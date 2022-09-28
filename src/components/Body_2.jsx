@@ -20,7 +20,7 @@ export const qualities = [
 
 const Body_2 = () => {
    return (
-      <div>
+      <div id="body_2" >
          <div className="flex bg-white w-[80%] h-[60vh] md:flex-nowrap sm:flex-wrap m-auto  items-center justify-evenly mt-20 mb-20 ">
             {
                qualities.map((elt, index) => {

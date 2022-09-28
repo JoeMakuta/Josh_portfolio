@@ -29,7 +29,7 @@ export const amazing_works = [
 
 const Body_4 = () => {
    return (
-      <div className=" text-center mt-16 flex flex-col gap-5 relative " >
+      <div id="body_4" className=" text-center mt-16 flex flex-col gap-5 relative " >
          <p className=" font-semibold " >Portfolio</p>
          <p className=" font-bold text-5xl text-main_color " >
             My Amazing Works

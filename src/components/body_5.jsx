@@ -26,7 +26,7 @@ const talents = [
 
 const Body_5 = () => {
    return (
-      <div className=" flex pl-36 pr-36 pt-20 pb-20 box-content bg-white h-[70vh] " >
+      <div id="body_5" className=" flex pl-36 pr-36 pt-20 pb-20 box-content bg-white h-[70vh] " >
          <div className='flex flex-col gap-5 justify-center items-start box-border w-[50%] ' >
             <p className=' text-main_color ' >For me web developement  is Life</p>
             <p className=' font-bold text-4xl '>I Develop Skills Regularly to Keep Me Updated</p>
