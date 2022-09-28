@@ -8,6 +8,7 @@ import Body_3 from './components/body_3'
 import Body_4 from './components/body_4'
 import Footer from './components/footer'
 import Body_5 from './components/body_5'
+import Body_6 from './components/body_6'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Body_3 />
       <Body_4 />
       <Body_5 />
+      <Body_6 />
       <Footer />
     </div>
   )

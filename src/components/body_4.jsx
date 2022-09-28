@@ -42,11 +42,10 @@ const Body_4 = () => {
             {
                amazing_works.map((elt, index) => {
                   return (
-                     <div key={index} className=' relative  cursor-pointer w-[20%] h-96'>
-                        <div>
+                     <div key={index} className='   cursor-pointer w-[20%] h-96'>
+                        <div className='relative' >
                            <img src={elt.image} alt="" />
-                        </div>
-                        <div className=' bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-all text-white h-72 absolute top-0 flex items-center justify-center flex-col gap-5 p-12 ' >
+                           <div className=' bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-all text-white h-full absolute top-0 flex items-center justify-center flex-col gap-5  ' >
                            <p className=' font-semibold text-xl ' >{elt.title}</p>
                            <p className='text-xs' >{elt.description}</p>
                            <div className='flex gap-7'>
@@ -54,6 +53,8 @@ const Body_4 = () => {
                               <a href="#"> <RiZoomInFill /></a>
                            </div>
                         </div>
+                        </div>
+                        
                      </div>
                   )
                })
