@@ -9,28 +9,28 @@ export const social_media = [
    {
       name: 'facebook',
       icon: <BsFacebook />,
-      link: '#'
+      link: 'https://www.facebook.com/josue.joemakuta'
    },
    {
       name: 'Twitter',
       icon: <BsTwitter />,
-      link: '#'
+      link: 'https://twitter.com/JosueMakuta'
    },
    {
       name: 'Github',
       icon: <BsGithub />,
-      link: '#'
+      link: 'https://github.com/JoeMakuta'
    },
    {
       name: 'LinkedIn',
       icon: <BsLinkedin />,
-      link: '#'
+      link: 'https://www.linkedin.com/in/josu%C3%A9-makuta-32367120b/'
    },
 ]
 
 export const Right_body_1 = () => {
    return (
-      <div className="flex h-full w-[45%] justify-start ">
+      <div className="flex w-[45%] justify-start ">
          <img src={main_img} className='w-full' alt="" />
       </div>
    )
@@ -38,7 +38,7 @@ export const Right_body_1 = () => {
 
 export const Left_body_1 = () => {
    return (
-      <div className="flex flex-col w-[50%] justify-center h-full gap-9  ">
+      <div className="flex flex-col w-[50%] justify-center h-full gap-5 ">
          <div className=" flex gap-1" >
             <p>Hi,</p>
             <MdOutlineWavingHand size={25} />

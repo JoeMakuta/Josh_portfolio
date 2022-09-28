@@ -46,15 +46,15 @@ const Body_4 = () => {
                         <div className='relative' >
                            <img src={elt.image} alt="" />
                            <div className=' bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-all text-white h-full absolute top-0 flex items-center justify-center flex-col gap-5  ' >
-                           <p className=' font-semibold text-xl ' >{elt.title}</p>
-                           <p className='text-xs' >{elt.description}</p>
-                           <div className='flex gap-7'>
-                              <a href="#"><FaLink /></a>
-                              <a href="#"> <RiZoomInFill /></a>
+                              <p className=' font-semibold text-xl ' >{elt.title}</p>
+                              <p className='text-xs' >{elt.description}</p>
+                              <div className='flex gap-7'>
+                                 <a href="#"><FaLink /></a>
+                                 <a href="#"> <RiZoomInFill /></a>
+                              </div>
                            </div>
                         </div>
-                        </div>
-                        
+
                      </div>
                   )
                })
