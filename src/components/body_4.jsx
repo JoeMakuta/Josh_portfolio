@@ -3,23 +3,25 @@ import arrow_img from '/src/assets/try-out-arrow.svg'
 import { FaLink } from 'react-icons/fa'
 import { RiZoomInFill } from 'react-icons/ri'
 
+import work_image_1 from '../assets/Screenshot from 2022-08-04 16-09-48.jpg'
+
 export const amazing_works = [
    {
-      image: '/src/assets/Screenshot from 2022-08-04 16-09-48.jpg',
+      image: work_image_1,
       title: 'Landing Page',
       description: 'This page is a landing page of the official site of sunnySide company',
       link: '#'
    },
 
    {
-      image: '/src/assets/Screenshot from 2022-08-04 16-09-48.jpg',
+      image: work_image_1,
       title: 'Landing Page',
       description: 'This page is a landing page of the official site of sunnySide company',
       link: '#'
    },
 
    {
-      image: '/src/assets/Screenshot from 2022-08-04 16-09-48.jpg',
+      image: work_image_1,
       title: 'Landing Page',
       description: 'This page is a landing page of the official site of sunnySide company',
       link: '#'
