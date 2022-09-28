@@ -3,6 +3,8 @@ export const btn_styles = " border-[1px] border-main_color rounded-full p-3 hove
 export const btn_inverted_styles = " border-[1px] text-white hover:bg-inherit hover:text-inherit border-main_color rounded-full p-3 bg-main_color   active:bg-white "
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
+import My_cv from '../assets/Josue Makuta Cv.jpg'
+
 const menu_links = [
    {
       link_label: 'Home',
@@ -35,9 +37,9 @@ const TopMenu = () => {
                   )
                })
             }
-            <button className={btn_styles} >
+            <a className={btn_styles} href={My_cv} download='Josue Makuta Cv.jpg' >
                Download<span className=" font-bold "> CV</span>
-            </button>
+            </a>
 
          </div>
       </div>
