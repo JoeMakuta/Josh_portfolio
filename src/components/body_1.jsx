@@ -2,6 +2,7 @@ import TopMenu, { btn_inverted_styles, btn_styles } from "./top_menu"
 import { MdOutlineWavingHand } from 'react-icons/md'
 import { BsFacebook, BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs'
 import AnchorLink from "react-anchor-link-smooth-scroll"
+import { motion } from "framer-motion"
 
 import main_img from "../assets/IMG_3726_okay-removebg-preview.png"
 

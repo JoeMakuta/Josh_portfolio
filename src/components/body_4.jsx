@@ -8,9 +8,9 @@ import work_image_1 from '../assets/Screenshot from 2022-08-04 16-09-48.jpg'
 export const amazing_works = [
    {
       image: work_image_1,
-      title: 'Landing Page',
+      title: 'World Weather',
       description: 'This page is a landing page of the official site of sunnySide company',
-      link: '#'
+      link: 'https://world-weather-app-josue-makuta.netlify.app/'
    },
 
    {
@@ -44,15 +44,15 @@ const Body_4 = () => {
             {
                amazing_works.map((elt, index) => {
                   return (
-                     <div key={index} className='   cursor-pointer w-[20%] h-96'>
+                     <div key={index} className=' w-[20%] h-96' >
                         <div className='relative' >
                            <img src={elt.image} alt="" />
-                           <div className=' bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-all text-white h-full absolute top-0 flex items-center justify-center flex-col gap-5  ' >
+                           <div className=' bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-all text-white h-full absolute top-0 flex items-center justify-center flex-col gap-5 '>
                               <p className=' font-semibold text-xl ' >{elt.title}</p>
                               <p className='text-xs' >{elt.description}</p>
                               <div className='flex gap-7'>
-                                 <a href="#"><FaLink /></a>
-                                 <a href="#"> <RiZoomInFill /></a>
+                                 <a href="https://world-weather-app-josue-makuta.netlify.app/" target='__blank' className=' hover:text-yellow-400 ' ><FaLink /></a>
+                                 <a href="#" target='__blank' className=' hover:text-yellow-400 ' > <RiZoomInFill /></a>
                               </div>
                            </div>
                         </div>
