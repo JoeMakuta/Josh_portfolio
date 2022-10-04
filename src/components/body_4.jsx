@@ -5,10 +5,11 @@ import { RiZoomInFill } from 'react-icons/ri'
 import { useState } from 'react'
 import Modal from 'react-modal'
 
-import work_image_1 from '../assets/Screenshot from 2022-08-04 16-09-48.jpg'
-import work_image_2 from '../assets/Programiz-Pro.jpg'
-import work_image_3 from '../assets/World Weather.png'
-import work_image_4 from '../assets/Calculator.png'
+import work_image_1 from '../assets/capture_quizapp.png'
+import work_image_2 from '../assets/capture_programiz.png'
+import work_image_3 from '../assets/capture_weather.png'
+import work_image_4 from '../assets/capture_calculator.png'
+
 import ModalOur from './modal'
 
 
@@ -41,6 +42,7 @@ export const amazing_works = [
    },
 
 
+
 ]
 
 const Body_4 = () => {
@@ -59,24 +61,33 @@ const Body_4 = () => {
             Most common methods for designing websites that work well on desktop is responsive and adaptive design
          </p>
          <img src={arrow_img} className='block rotate-180 absolute left-[25%] ' alt="" />
-         <div className='flex flex-wrap justify-center gap-6 mb-28  ' >
+         <div className='flex flex-wrap gap-5 justify-center mb-28  ' >
             {
                amazing_works.map((elt, index) => {
                   return (
-                     <div key={index} className='flex border-[1px] border-gray-700 relative w-72 h-72' >
-                        <img src={elt.image} alt={elt.description} className=' object-cover h-full ' />
-                        <div className=' bg-rose-500 bg-opacity-90 opacity-0 p-10 hover:opacity-100 transition-all delay-75 text-white h-full absolute top-10 hover:top-0 flex items-center justify-center flex-col gap-5 '>
+
+                     <div key={index} className='flex flex-col p-5 shadow-2xl hover:bg-main_color hover:bg-opacity-20 w-[20vw] h-96 relative rounded-lg ' >
+
+                        <div className='h-[20vw] relative' >
+                           <img src={elt.image} alt={elt.description} className=' object-cover h-full rounded-lg  ' />
+
+                           <div className=' bg-black bg-opacity-50 opacity-0 p-10 hover:opacity-100 transition-all delay-75 text-white h-full w-full absolute top-0 flex items-center justify-center flex-col gap-5 rounded-lg '>
+                              <div className='flex gap-7'>
+                                 <a href={elt.link} target='__blank' className=' hover:text-yellow-400' ><FaLink size={30} /></a>
+                                 <button onClick={() => { setShowModal(true); setImgLink(elt.image) }} className=' hover:text-yellow-400 ' > <RiZoomInFill size={30} /></button>
+                              </div>
+                           </div>
+                        </div>
+
+
+
+                        <div className=' text-left p-5  '>
                            <p className=' font-semibold text-xl ' >{elt.title}</p>
                            <p className='text-xs' >{elt.description}</p>
-                           <div className='flex gap-7'>
-                              <a href={elt.link} target='__blank' className=' hover:text-yellow-400 ' ><FaLink /></a>
-                              <button onClick={() => {setShowModal(true); setImgLink(elt.image)}} className=' hover:text-yellow-400 ' > <RiZoomInFill /></button>
-                           </div>
-
-                           
-
                         </div>
+                        <div className=' w-full h-[1px] bg-gray-500 ' ></div>
                      </div>
+
                   )
                })
             }
