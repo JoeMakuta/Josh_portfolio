@@ -40,19 +40,28 @@ export const amazing_works = [
       description: 'This page is a landing page of the official site of sunnySide company',
       link: 'https://calculator-josue-makuta.netlify.app/'
    },
-
-
-
 ]
 
 const Body_4 = () => {
 
    const [showModal, setShowModal] = useState(false);
    const [imgLink, setImgLink] = useState('');
+   const [imgIndex, setImgIndex] = useState(null);
+
 
    return (
-      <div id="body_4" className=" text-center mt-16 flex flex-col gap-5 relative " >
-         {showModal && <ModalOur image={imgLink} setShowModal={setShowModal} />}
+      <div
+         id="body_4"
+         className=" text-center mt-16 flex flex-col gap-5 relative "
+      >
+         {showModal && <ModalOur
+            imgLink={imgLink}
+            setImgLink={setImgLink}
+            setShowModal={setShowModal}
+            imgIndex={imgIndex}
+            setImgIndex={setImgIndex}
+         />}
+
          <p className=" font-semibold " >Portfolio</p>
          <p className=" font-bold text-5xl text-main_color " >
             My Amazing Works
@@ -63,27 +72,41 @@ const Body_4 = () => {
          <img src={arrow_img} className='block rotate-180 absolute left-[25%] ' alt="" />
          <div className='flex flex-wrap gap-5 justify-center mb-28  ' >
             {
-               amazing_works.map((elt, index) => {
+               amazing_works.map((elt, index, array) => {
                   return (
 
-                     <div key={index} className='flex flex-col p-5 shadow-2xl hover:bg-main_color hover:bg-opacity-20 w-[20vw] h-96 relative rounded-lg ' >
+                     <div key={index} className='flex flex-col p-5 shadow-2xl hover:bg-black hover:bg-opacity-30 w-[80vw] sm:w-[20vw] h-96 relative rounded-lg ' >
 
                         <div className='h-[20vw] relative' >
                            <img src={elt.image} alt={elt.description} className=' object-cover h-full rounded-lg  ' />
 
-                           <div className=' bg-black bg-opacity-50 opacity-0 p-10 hover:opacity-100 transition-all delay-75 text-white h-full w-full absolute top-0 flex items-center justify-center flex-col gap-5 rounded-lg '>
+                           <div className=' bg-black bg-opacity-50 opacity-0 p-10 hover:opacity-100 transition-all delay-75 text-white h-full w-full absolute top-0 flex items-center justify-center flex-col gap-5 rounded-lg '
+                           >
                               <div className='flex gap-7'>
-                                 <a href={elt.link} target='__blank' className=' hover:text-yellow-400' ><FaLink size={30} /></a>
-                                 <button onClick={() => { setShowModal(true); setImgLink(elt.image) }} className=' hover:text-yellow-400 ' > <RiZoomInFill size={30} /></button>
+                                 <a href={elt.link}
+                                    target='__blank'
+                                    className=' hover:text-yellow-400'
+                                 >
+                                    <FaLink size={30} />
+                                 </a>
+                                 <button
+                                    onClick={() => {
+                                       setShowModal(true); setImgIndex(index);
+                                    }}
+                                    className=' hover:text-yellow-400 '
+                                 >
+                                    <RiZoomInFill size={30} />
+                                 </button>
                               </div>
                            </div>
                         </div>
-
-
-
                         <div className=' text-left p-5  '>
-                           <p className=' font-semibold text-xl ' >{elt.title}</p>
-                           <p className='text-xs' >{elt.description}</p>
+                           <p className=' font-semibold text-xl ' >
+                              {elt.title}
+                           </p>
+                           <p className='text-xs' >
+                              {elt.description}
+                           </p>
                         </div>
                         <div className=' w-full h-[1px] bg-gray-500 ' ></div>
                      </div>
