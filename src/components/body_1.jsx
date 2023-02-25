@@ -39,7 +39,7 @@ export const Right_body_1 = () => {
 
 export const Left_body_1 = () => {
   return (
-    <div className="flex flex-col w-[50%] justify-center h-full gap-5 ">
+    <div className="flex flex-col w-[50%] flex-wrap justify-center h-full gap-5 ">
       <div className=" flex gap-1">
         <p>Hi,</p>
         <MdOutlineWavingHand size={25} />
@@ -84,7 +84,7 @@ export const Left_body_1 = () => {
 
 export const Main_body = () => {
   return (
-    <div className="flex items-center justify-around w-[85%] m-auto ">
+    <div className="flex flex-wrap items-center justify-around w-[85%] m-auto ">
       <Left_body_1 />
       <Right_body_1 />
     </div>
