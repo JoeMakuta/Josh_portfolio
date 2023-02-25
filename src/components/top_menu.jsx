@@ -27,17 +27,17 @@ const menu_links = [
 const TopMenu = () => {
    return (
       <div className=" flex justify-between items-center gap-[30%] w-[90%] ml-auto mr-auto">
-         <button> <p className=" font-bold text-xl  ">Josue Makuta</p> </button>
+         <button> <p className=" font-bold text-xl ">Josue Makuta</p> </button>
          <div className="flex gap-[50px] justify-center items-center " >
             {
                menu_links.map((element, index) => {
                   return (
-                     <AnchorLink key={index} href={element.link_url} ><button href={element.link_url} className="hover:text-main_color" >{element.link_label}</button>
+                     <AnchorLink key={index} href={element.link_url} ><button href={element.link_url} className="hover:text-main_color text-sm" >{element.link_label}</button>
                      </AnchorLink>
                   )
                })
             }
-            <a className={btn_styles} href={My_cv} download='Josue Makuta Cv.jpg' >
+            <a className={btn_styles + "text-sm"} href={My_cv} download='Josue Makuta Cv.jpg' >
                Download<span className=" font-bold "> CV</span>
             </a>
 
