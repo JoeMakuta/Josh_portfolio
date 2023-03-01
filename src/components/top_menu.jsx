@@ -30,39 +30,43 @@ const menu_links = [
 const TopMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className=" flex justify-between items-center gap-[30%] w-[90%] h-[4vw] ml-auto mr-auto">
+    <div className=" flex justify-between items-center gap-[30%] w-[90%] h-[5vw] ml-auto mr-auto">
       <button>
         {" "}
         <p className=" font-bold text-xl">Josue Makuta</p>{" "}
       </button>
 
-      <div className="flex gap-[4vw] flex-wrap justify-center items-center">
-        {showMenu ? (
-          <div className=" flex gap-[4vw] justify-center items-center " >
-            {menu_links.map((element, index) => {
-              return (
-                <AnchorLink key={index} href={element.link_url}>
-                  <button
-                    href={element.link_url}
-                    className="hover:text-main_color text-sm"
-                  >
-                    {element.link_label}
-                  </button>
-                </AnchorLink>
-              );
-            })}
-            <a
-              className={btn_styles + "text-sm box-border"}
-              href={My_cv}
-              download="Josue Makuta Cv.jpg"
-            >
-              Download<span className=" font-bold "> CV</span>
-            </a>
-          </div>
-        ) : null}
-        <button onClick={() => {
-          showMenu ? setShowMenu(false) : setShowMenu(true)
-        }}>
+      <div className=" flex gap-[4vw] justify-center items-center ">
+        <div className="flex gap-[4vw] flex-wrap justify-center items-center">
+          {showMenu ? (
+            <div className=" flex fixed w-[100vw] bg-white bg-opacity-[0.95] md:bg-inherit z-10 h-[100vh]  top-[0vw] left-0 gap-[10vh] md:top-0 sm:w-full  md:relative  flex-col lg:flex-row md:gap-[4vw] justify-center items-center ">
+              {menu_links.map((element, index) => {
+                return (
+                  <AnchorLink key={index} href={element.link_url}>
+                    <button
+                      href={element.link_url}
+                      className="hover:text-main_color text-sm"
+                    >
+                      {element.link_label}
+                    </button>
+                  </AnchorLink>
+                );
+              })}
+              <a
+                className={btn_styles + "text-sm box-border"}
+                href={My_cv}
+                download="Josue Makuta Cv.jpg"
+              >
+                Download<span className=" font-bold "> CV</span>
+              </a>
+            </div>
+          ) : null}
+        </div>
+        <button
+          onClick={() => {
+            showMenu ? setShowMenu(false) : setShowMenu(true);
+          }}
+        >
           <RiMenu4Line size={30} />
         </button>
       </div>

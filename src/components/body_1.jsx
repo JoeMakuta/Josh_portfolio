@@ -93,7 +93,7 @@ export const Main_body = () => {
 
 export const Body_1 = () => {
   return (
-    <div className=" flex flex-col justify-between w-full h-screen pt-6 bg-main_bg bg-cover">
+    <div className=" flex flex-col justify-between max-w-screen h-screen pt-6 bg-main_bg bg-cover">
       <TopMenu />
       <Main_body />
     </div>
