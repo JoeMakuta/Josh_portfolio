@@ -48,7 +48,6 @@ const Body_4 = () => {
    const [imgLink, setImgLink] = useState('');
    const [imgIndex, setImgIndex] = useState(null);
 
-
    return (
       <div
          id="body_4"
