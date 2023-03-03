@@ -4,6 +4,7 @@ export const btn_inverted_styles =
   " border-[1px] text-white hover:bg-inherit hover:text-inherit border-main_color rounded-full p-3 bg-main_color   active:bg-white ";
 import { RiMenu4Line } from "react-icons/ri";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { MdOutlineClose } from "react-icons/md";
 
 import My_cv from "../assets/Josue Makuta Cv.jpg";
 import { useState } from "react";
@@ -33,13 +34,16 @@ const TopMenu = () => {
     <div className=" flex justify-between items-center gap-[30%] w-[90%] h-[5vw] ml-auto mr-auto">
       <button>
         {" "}
-        <p className=" font-bold text-xl">Josue Makuta</p>{" "}
+        <p className=" font-bold text-xl">Josué Makuta</p>{" "}
       </button>
 
       <div className=" flex gap-[4vw] justify-center items-center ">
         <div className="flex gap-[4vw] flex-wrap justify-center items-center">
           {showMenu ? (
             <div className=" flex fixed w-[100vw] bg-white bg-opacity-[0.95] md:bg-inherit z-10 h-[100vh]  top-[0vw] left-0 gap-[10vh] md:top-0 sm:w-full  md:relative  flex-col lg:flex-row md:gap-[4vw] justify-center items-center ">
+              <div>
+                <MdOutlineClose size={30} />
+              </div>
               {menu_links.map((element, index) => {
                 return (
                   <AnchorLink key={index} href={element.link_url}>
