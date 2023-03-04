@@ -17,12 +17,12 @@ function App() {
   return (
     <div className="font-poppins bg-main_color bg-opacity-20 ">
       <Body_1_alter />
-      {/* <Body_2 />
+      <Body_2 />
       <Body_3 />
       <Body_4 />
       <Body_5 />
       <Body_6 />
-      <Footer /> */}
+      <Footer />
     </div>
   )
 }
