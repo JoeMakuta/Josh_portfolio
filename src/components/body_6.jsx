@@ -10,7 +10,7 @@ const Body_6 = () => {
          </div>
          <div className="flex justify-center " >
             <Address />
-            <Contact_form />
+            {/* <Contact_form /> */}
          </div>
       </div>
 

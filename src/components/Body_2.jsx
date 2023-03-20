@@ -8,17 +8,17 @@ export const qualities = [
    {
       icon: quality_icon_1,
       label: 'Save Money',
-      text: 'Most common methods for designing websites that work well on desktop is responsive and adaptive design',
+      text: '',
    },
    {
       icon: quality_icon_2,
       label: 'Hight Quality',
-      text: 'Most common methods for designing websites that work well on desktop is responsive and adaptive design',
+      text: '',
    },
    {
       icon: quality_icon_3,
       label: 'Awesome Ideas',
-      text: 'Most common methods for designing websites that work well on desktop is responsive and adaptive design',
+      text: '',
    },
 ]
 
