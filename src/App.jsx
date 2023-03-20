@@ -21,9 +21,9 @@ function App() {
       <Body_2 />
       <Body_3 />
       <Body_4 />
-      {/* <Body_5 /> */}
-      {/* <Body_6 /> */}
-      {/* <Footer /> */}
+      <Body_5 />
+      <Body_6 />
+      <Footer />
     </div>
   )
 }

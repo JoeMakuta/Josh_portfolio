@@ -9,7 +9,7 @@ const ProgressBar = (props) => {
    return (
 
       <div>
-         <div className=" flex w-96  justify-between " >
+         <div className=" flex w-[85vw] sm:w-96  justify-between " >
             <p className=" font-semibold ">{props.Title}</p>
             <p>{props.level}%</p>
          </div>
