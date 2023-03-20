@@ -18,9 +18,9 @@ function App() {
     <div className="font-poppins pt-10  sm:pt-0 bg-opacity-20 ">
       <TopMenu />
       <Body_1 />
-      {/* <Body_2 /> */}
-      {/* <Body_3 />
-      <Body_4 />
+      <Body_2 />
+      <Body_3 />
+      {/* <Body_4 />
       <Body_5 />
       <Body_6 />
       <Footer /> */}

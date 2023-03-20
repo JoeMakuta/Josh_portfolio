@@ -31,7 +31,7 @@ export const social_media = [
 
 export const Right_body_1 = () => {
   return (
-    <div className=" hidden sm:flex">
+    <div className=" hidden sm:flex w-[58%]">
       <img src={main_img} className="w-full" alt="" />
     </div>
   );
@@ -58,7 +58,8 @@ export const Left_body_1 = () => {
         <AnchorLink
           href="#body_3"
           className={
-            btn_inverted_styles + " flex items-center justify-center w-[70vw] sm:w-[40%]"
+            btn_inverted_styles +
+            " flex items-center justify-center w-[70vw] sm:w-[40%]"
           }
         >
           <button>About</button>
@@ -99,12 +100,12 @@ export const Body_1 = () => {
   );
 };
 
-// const Body_1_alter = () => {
-//   return (
-//     <div id="body_1" className=" bg-white ">
-//       <Body_1 />
-//     </div>
-//   );
-// };
+const Body_1_alter = () => {
+  return (
+    <div id="body_1" className=" bg-white ">
+      <Body_1 />
+    </div>
+  );
+};
 
-// export default Body_1_alter;
+export default Body_1_alter;
