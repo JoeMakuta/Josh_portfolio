@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import TopMenu from './components/top_menu'
-import Body_1 from './components/body_1'
+import Body_1, { Main_body } from './components/body_1'
 import './App.css'
 import Body_1_alter from './components/body_1'
 import Body_2 from './components/Body_2'
@@ -15,14 +15,15 @@ import Modal from 'react-modal'
 Modal.setAppElement('#root')
 function App() {
   return (
-    <div className="font-poppins bg-main_color bg-opacity-20 ">
-      <Body_1_alter />
-      <Body_2 />
-      <Body_3 />
+    <div className="font-poppins pt-10  sm:pt-0 bg-opacity-20 ">
+      <TopMenu />
+      <Body_1 />
+      {/* <Body_2 /> */}
+      {/* <Body_3 />
       <Body_4 />
       <Body_5 />
       <Body_6 />
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }

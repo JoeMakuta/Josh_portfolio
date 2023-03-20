@@ -31,7 +31,7 @@ export const social_media = [
 
 export const Right_body_1 = () => {
   return (
-    <div className="flex w-[45%] justify-start ">
+    <div className=" hidden sm:flex">
       <img src={main_img} className="w-full" alt="" />
     </div>
   );
@@ -39,7 +39,7 @@ export const Right_body_1 = () => {
 
 export const Left_body_1 = () => {
   return (
-    <div className="flex flex-col w-[50%] flex-wrap justify-center h-full gap-5 ">
+    <div className="flex flex-col w-[90vw] sm:w-[50vw] gap-8 flex-wrap justify-center h-full sm:gap-5 ">
       <div className=" flex gap-1">
         <p>Hi,</p>
         <MdOutlineWavingHand size={25} />
@@ -54,11 +54,11 @@ export const Left_body_1 = () => {
         I'm a full stack web developper and Ux designer based in DRC, and I'm
         very passionate and dedicated to my work.
       </p>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center flex-wrap gap-10">
         <AnchorLink
           href="#body_3"
           className={
-            btn_inverted_styles + " flex items-center justify-center w-[40%]"
+            btn_inverted_styles + " flex items-center justify-center w-[70vw] sm:w-[40%]"
           }
         >
           <button>About</button>
@@ -84,7 +84,7 @@ export const Left_body_1 = () => {
 
 export const Main_body = () => {
   return (
-    <div className="flex flex-wrap items-center justify-around w-[85%] m-auto ">
+    <div className=" flex flex-col-reverse sm:flex-row justify-center">
       <Left_body_1 />
       <Right_body_1 />
     </div>
@@ -93,19 +93,18 @@ export const Main_body = () => {
 
 export const Body_1 = () => {
   return (
-    <div className=" flex flex-col justify-between max-w-screen h-screen pt-6 bg-main_bg bg-cover">
-      <TopMenu />
+    <div className=" flex flex-col p-5 justify-center items-center max-w-screen h-[90vh] pt-6 bg-main_bg bg-cover">
       <Main_body />
     </div>
   );
 };
 
-const Body_1_alter = () => {
-  return (
-    <div id="body_1" className=" bg-white ">
-      <Body_1 />
-    </div>
-  );
-};
+// const Body_1_alter = () => {
+//   return (
+//     <div id="body_1" className=" bg-white ">
+//       <Body_1 />
+//     </div>
+//   );
+// };
 
-export default Body_1_alter;
+// export default Body_1_alter;
