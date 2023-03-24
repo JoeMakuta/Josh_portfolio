@@ -31,7 +31,7 @@ const menu_links = [
 const TopMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className=" flex justify-between items-center gap-[30%] w-[90%] h-[5vw] ml-auto mr-auto">
+    <div className=" flex justify-between items-center bg-white gap-[30%] w-[100%] pl-10 pr-10 h-[5vw] ml-auto mr-auto">
       <button>
         {" "}
         <p className=" font-bold text-xl">Josué Makuta</p>{" "}

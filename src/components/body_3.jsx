@@ -26,7 +26,7 @@ export const Right_body_3 = () => {
 
 const Body_3 = () => {
    return (
-      <div id="body_3" className="flex flex-wrap sm:flex-nowrap justify-center items-center gap-5 sm:gap-[5vw] p-5  bg-main_color bg-opacity-10">
+      <div id="body_3" className="flex flex-wrap sm:flex-nowrap justify-center items-center gap-5 sm:gap-[5vw] p-5  bg-white">
          <Left_body_3 />
          <Right_body_3 />
       </div>

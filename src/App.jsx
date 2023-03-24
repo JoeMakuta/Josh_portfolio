@@ -15,7 +15,7 @@ import Modal from 'react-modal'
 Modal.setAppElement('#root')
 function App() {
   return (
-    <div className="font-poppins pt-10  sm:pt-0 bg-opacity-20 ">
+    <div className="font-poppins pt-10 bg-main_color  sm:pt-0 bg-opacity-20 ">
       <TopMenu />
       <Body_1 />
       <Body_2 />
