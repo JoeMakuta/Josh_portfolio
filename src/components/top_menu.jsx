@@ -31,7 +31,7 @@ const menu_links = [
 const TopMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className=" flex justify-between items-center bg-white gap-[30%] w-[100%] pl-10 pr-10 h-[5vw] ml-auto mr-auto">
+    <div className=" flex justify-between items-center bg-white gap-[30%] w-[100%] sm:pl-10 sm:pr-10 pl-3 pr-3 h-[5vw] ml-auto mr-auto">
       <button>
         {" "}
         <p className=" font-bold text-xl">Josué Makuta</p>{" "}
@@ -41,9 +41,13 @@ const TopMenu = () => {
         <div className="flex gap-[4vw] flex-wrap justify-center items-center">
           {showMenu ? (
             <div className=" flex fixed w-[100vw] bg-white bg-opacity-[0.95] md:bg-inherit z-10 h-[100vh]  top-[0vw] left-0 gap-[10vh] md:top-0 sm:w-full  md:relative  flex-col lg:flex-row md:gap-[4vw] justify-center items-center ">
-              <div>
+              <button className="block sm:hidden"
+                onClick={() => {
+                  showMenu ? setShowMenu(false) : setShowMenu(true);
+                }}
+              >
                 <MdOutlineClose size={30} />
-              </div>
+              </button>
               {menu_links.map((element, index) => {
                 return (
                   <AnchorLink key={index} href={element.link_url}>
@@ -71,7 +75,7 @@ const TopMenu = () => {
             showMenu ? setShowMenu(false) : setShowMenu(true);
           }}
         >
-          <RiMenu4Line size={30} />
+          {showMenu ? <MdOutlineClose size={30} /> : <RiMenu4Line size={30} />}
         </button>
       </div>
     </div>
