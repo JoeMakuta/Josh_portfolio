@@ -62,13 +62,13 @@ const Body_4 = () => {
          />}
 
          <p className=" font-semibold " >Portfolio</p>
-         <p className=" font-bold text-5xl text-main_color " >
+         <p className=" font-bold text-5xl text-main_color z-10 " >
             My Amazing Works
          </p>
          <p className="w-[80%] sm:w-[30%] m-auto" >
             Most common methods for designing websites that work well on desktop is responsive and adaptive design
          </p>
-         <img src={arrow_img} className='hidden sm:block rotate-180 absolute left-[25%] ' alt="" />
+         <img src={arrow_img} className='hidden sm:block rotate-180 absolute left-[25%] z-0' alt="" />
          <div className='flex flex-wrap gap-5 justify-center mb-28  ' >
             {
                amazing_works.map((elt, index, array) => {
