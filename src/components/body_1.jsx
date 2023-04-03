@@ -30,7 +30,7 @@ export const social_media = [
 
 export const Right_body_1 = () => {
   return (
-    <div className=" hidden sm:flex w-[58%]">
+    <div data-aos="fade-right" className=" hidden sm:flex w-[58%]">
       <img src={main_img} className="w-full" alt="" />
     </div>
   );
@@ -38,7 +38,7 @@ export const Right_body_1 = () => {
 
 export const Left_body_1 = () => {
   return (
-    <div className="flex flex-col w-[90vw] sm:w-[50vw] gap-8 flex-wrap justify-center h-full sm:gap-5 ">
+    <div data-aos="fade-left" data-aos-delay="200" className="flex flex-col w-[90vw] sm:w-[50vw] gap-8 flex-wrap justify-center h-full sm:gap-5 ">
       <div className=" flex gap-1">
         <p>Hi,</p>
         <MdOutlineWavingHand size={25} />

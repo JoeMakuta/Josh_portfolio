@@ -33,7 +33,8 @@ const Body_2 = () => {
       {qualities.map((elt, index) => {
         return (
           <div
-            data-aos="fade-down"
+            data-aos="fade-up"
+            data-aos-delay="200"
             key={index}
             className=" flex flex-col gap-2 justify-center items-center p-10 "
           >
