@@ -1,21 +1,26 @@
-import { useState } from 'react'
-import TopMenu from './components/top_menu'
-import Body_1, { Main_body } from './components/body_1'
-import './App.css'
-import Body_1_alter from './components/body_1'
-import Body_2 from './components/Body_2'
-import Body_3 from './components/body_3'
-import Body_4 from './components/body_4'
-import Footer from './components/footer'
-import Body_5 from './components/body_5'
-import Body_6 from './components/body_6'
-import Modal from 'react-modal'
+import { useState } from "react";
+import TopMenu from "./components/top_menu";
+import Body_1, { Main_body } from "./components/body_1";
+import "./App.css";
+import Body_1_alter from "./components/body_1";
+import Body_2 from "./components/Body_2";
+import Body_3 from "./components/body_3";
+import Body_4 from "./components/body_4";
+import Footer from "./components/footer";
+import Body_5 from "./components/body_5";
+import Body_6 from "./components/body_6";
+import Modal from "react-modal";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+AOS.init();
 
-
-Modal.setAppElement('#root')
+Modal.setAppElement("#root");
 function App() {
   return (
-    <div className="font-poppins pt-10 bg-main_color  sm:pt-0 bg-opacity-20 ">
+    <div
+      data-aos="fade-up"
+      className="font-poppins pt-10 bg-main_color  sm:pt-0 bg-opacity-20 "
+    >
       <TopMenu />
       <Body_1 />
       <Body_2 />
@@ -25,7 +30,7 @@ function App() {
       <Body_6 />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

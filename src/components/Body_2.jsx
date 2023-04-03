@@ -23,12 +23,17 @@ export const qualities = [
 const Body_2 = () => {
   return (
     <div
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
       id="body_2"
       className="flex bg-white flex-wrap sm:w-[80%] sm:h-[60vh] md:flex-nowrap sm:flex-wrap m-auto  items-center justify-evenly sm:mt-20 sm:mb-20 "
     >
       {qualities.map((elt, index) => {
         return (
           <div
+            data-aos="fade-down"
             key={index}
             className=" flex flex-col gap-2 justify-center items-center p-10 "
           >
