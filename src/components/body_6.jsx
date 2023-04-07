@@ -1,6 +1,6 @@
 // import Contact_form from "./contact_form"
 import Address from "./address";
-import AdvancedSearchForm from "./contact_form";
+import Contact_form from "./contact_form";
 import FormAnt from "./contact_form";
 
 const Body_6 = () => {
@@ -15,10 +15,11 @@ const Body_6 = () => {
           I want to hear from you !
         </p>
       </div>
-      <div className="flex justify-center ">
+      <div className="flex w-full justify-center gap-16">
+        <Contact_form />
         <Address />
-        {/* <Contact_form /> */}
-        <AdvancedSearchForm />
+
+        {/* <AdvancedSearchForm /> */}
       </div>
     </div>
   );

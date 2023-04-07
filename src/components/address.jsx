@@ -39,7 +39,7 @@ const Single_address = (props) => {
 
 const Address = () => {
   return (
-    <div className=" flex flex-col justify-center gap-5 w-[100%] ">
+    <div className=" flex flex-col justify-center gap-5 w-[30vw] ">
       {addresses.map((elt, index) => {
         return (
           <div key={index} className="flex">

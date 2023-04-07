@@ -1,3 +1,4 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { btn_inverted_styles, btn_styles } from "./top_menu";
 import main_img from "/src/assets/20220804_103923 (1).jpg";
 
@@ -39,13 +40,16 @@ export const Right_body_3 = () => {
         your project a success. I enjoy every step of the development process,
         from discussion and collaboration.
       </p>
-      <button
-        data-aos="fade-up"
-        data-aos-delay="250"
-        className={btn_inverted_styles + "w-[40%]"}
-      >
-        Hire me
-      </button>
+      <AnchorLink href="#body_6">
+        <button
+          data-aos="fade-up"
+          data-aos-delay="250"
+          href={"#body_6"}
+          className={btn_inverted_styles + "w-[100%]"}
+        >
+          Hire me
+        </button>
+      </AnchorLink>
     </div>
   );
 };
