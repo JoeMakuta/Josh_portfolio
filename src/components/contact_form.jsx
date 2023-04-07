@@ -71,7 +71,7 @@ const Contact_form = () => {
           onChange={(e) => {
             setMessage(e.target.value);
           }}
-          className=" w-[100%] text-xs h-8 p-3 outline-none"
+          className=" w-[100%] h-[6rem] text-xs p-3 outline-none"
         />
       </div>
 
@@ -79,7 +79,7 @@ const Contact_form = () => {
         type="submit"
         className={
           btn_styles +
-          "w-full rounded-full flex justify-center items-center gap-4 mt-4"
+          "w-full rounded-lg flex justify-center items-center gap-4 mt-4"
         }
       >
         <h1>Send</h1>

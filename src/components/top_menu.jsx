@@ -6,7 +6,7 @@ import { RiMenu4Line } from "react-icons/ri";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { MdOutlineClose } from "react-icons/md";
 
-import My_cv from "../assets/Josue Makuta Cv.jpg";
+import My_cv from "../assets/Josue Makuta CV Fr.pdf";
 import { useState } from "react";
 
 const menu_links = [
@@ -61,7 +61,7 @@ const TopMenu = () => {
               <a
                 className={btn_styles + "text-sm box-border"}
                 href={My_cv}
-                download="Josue Makuta Cv.jpg"
+                download="Josue Makuta CV Fr.pdf"
               >
                 Download<span className=" font-bold "> CV</span>
               </a>
