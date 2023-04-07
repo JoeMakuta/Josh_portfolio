@@ -15,7 +15,7 @@ const Body_6 = () => {
           I want to hear from you !
         </p>
       </div>
-      <div className="flex w-full justify-center gap-16">
+      <div className="flex w-full justify-center gap-16 flex-wrap">
         <Contact_form />
         <Address />
 
