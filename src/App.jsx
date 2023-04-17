@@ -14,7 +14,6 @@ import "aos/dist/aos.css";
 // import { Toaster } from "react-hot-toast";
 AOS.init();
 
-Modal.setAppElement("#root");
 function App() {
   return (
     <div className="font-poppins pt-10 bg-main_color  sm:pt-0 bg-opacity-20 ">

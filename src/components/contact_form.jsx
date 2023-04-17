@@ -1,12 +1,9 @@
 import { btn_styles } from "./top_menu";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
-import { Button, Col, Form, Input, Row, Select, theme } from "antd";
 import { useState } from "react";
 // import toast, { Toaster } from "react-hot-toast";
 import emailjs from "@emailjs/browser";
-
-const { Option } = Select;
 
 const SpanStar = () => {
   return <span className=" text-red-500 ">*</span>;
