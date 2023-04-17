@@ -17,7 +17,7 @@ const Body_6 = () => {
       </div>
       <div className="flex w-full justify-center gap-16 flex-wrap">
         <Contact_form />
-        <Address />
+        {/* <Address /> */}
 
         {/* <AdvancedSearchForm /> */}
       </div>

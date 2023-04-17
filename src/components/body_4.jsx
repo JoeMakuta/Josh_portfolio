@@ -51,7 +51,6 @@ const Body_4 = () => {
 
   return (
     <div
-      
       id="body_4"
       className=" text-center mt-16 flex flex-col gap-5 relative "
     >
@@ -66,9 +65,7 @@ const Body_4 = () => {
       )}
 
       <p className=" font-semibold ">Portfolio</p>
-      <p className=" font-bold text-5xl text-main_color z-10 ">
-        My Amazing Works
-      </p>
+      <p className=" font-bold text-5xl text-main_color  ">My Amazing Works</p>
       <p className="w-[80%] sm:w-[30%] m-auto">
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
