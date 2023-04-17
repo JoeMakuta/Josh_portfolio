@@ -6,7 +6,7 @@ import { RiMenu4Line } from "react-icons/ri";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { MdOutlineClose } from "react-icons/md";
 
-import My_cv from "../assets/Josue Makuta Cv.jpg";
+import My_cv from "../assets/Josue Makuta CV Fr.pdf";
 import { useState } from "react";
 
 const menu_links = [
@@ -41,7 +41,8 @@ const TopMenu = () => {
         <div className="flex gap-[4vw] flex-wrap justify-center items-center">
           {showMenu ? (
             <div className=" flex fixed w-[100vw] bg-white bg-opacity-[0.95] md:bg-inherit z-10 h-[100vh]  top-[0vw] left-0 gap-[10vh] md:top-0 sm:w-full  md:relative  flex-col lg:flex-row md:gap-[4vw] justify-center items-center ">
-              <button className="block sm:hidden"
+              <button
+                className="block sm:hidden"
                 onClick={() => {
                   showMenu ? setShowMenu(false) : setShowMenu(true);
                 }}
@@ -51,10 +52,7 @@ const TopMenu = () => {
               {menu_links.map((element, index) => {
                 return (
                   <AnchorLink key={index} href={element.link_url}>
-                    <button
-                      href={element.link_url}
-                      className="hover:text-main_color text-sm"
-                    >
+                    <button className="hover:text-main_color text-sm">
                       {element.link_label}
                     </button>
                   </AnchorLink>
@@ -63,7 +61,7 @@ const TopMenu = () => {
               <a
                 className={btn_styles + "text-sm box-border"}
                 href={My_cv}
-                download="Josue Makuta Cv.jpg"
+                download="Josue Makuta CV Fr.pdf"
               >
                 Download<span className=" font-bold "> CV</span>
               </a>

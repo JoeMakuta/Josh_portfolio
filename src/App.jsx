@@ -9,15 +9,15 @@ import Body_4 from "./components/body_4";
 import Footer from "./components/footer";
 import Body_5 from "./components/body_5";
 import Body_6 from "./components/body_6";
-import Modal from "react-modal";
 import AOS from "aos";
 import "aos/dist/aos.css";
+// import { Toaster } from "react-hot-toast";
 AOS.init();
 
-Modal.setAppElement("#root");
 function App() {
   return (
     <div className="font-poppins pt-10 bg-main_color  sm:pt-0 bg-opacity-20 ">
+      {/* <Toaster /> */}
       <TopMenu />
       <Body_1 />
       <Body_2 />

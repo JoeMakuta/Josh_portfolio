@@ -26,7 +26,9 @@ const addresses = [
 const Single_address = (props) => {
   return (
     <div className="  flex gap-3 items-center ">
-      <div className=" flex items-center justify-center bg-orange-500 w-20 h-20 rounded-full ">
+      <div
+        className={` flex items-center justify-center bg-orange-500 w-20 h-20 rounded-full `}
+      >
         {props.icon}
       </div>
       <div>
@@ -39,7 +41,7 @@ const Single_address = (props) => {
 
 const Address = () => {
   return (
-    <div className=" flex flex-col justify-center gap-5 w-[100%] ">
+    <div className=" flex md:flex-col md:justify-center gap-5 w-[90vw] flex-row md:w-[30vw] flex-wrap ">
       {addresses.map((elt, index) => {
         return (
           <div key={index} className="flex">
@@ -47,6 +49,7 @@ const Address = () => {
               icon={elt.icon}
               label={elt.label}
               label_description={elt.label_description}
+              color={elt.color}
             />
           </div>
         );

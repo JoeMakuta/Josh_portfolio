@@ -2,8 +2,6 @@ import arrow_img from "/src/assets/try-out-arrow.svg";
 import { FaLink } from "react-icons/fa";
 import { RiZoomInFill } from "react-icons/ri";
 import { useState } from "react";
-import Modal from "react-modal";
-
 import work_image_1 from "../assets/capture_quizapp.png";
 import work_image_2 from "../assets/capture_programiz.png";
 import work_image_3 from "../assets/capture_weather.png";
@@ -51,7 +49,6 @@ const Body_4 = () => {
 
   return (
     <div
-      
       id="body_4"
       className=" text-center mt-16 flex flex-col gap-5 relative "
     >
@@ -66,9 +63,7 @@ const Body_4 = () => {
       )}
 
       <p className=" font-semibold ">Portfolio</p>
-      <p className=" font-bold text-5xl text-main_color z-10 ">
-        My Amazing Works
-      </p>
+      <p className=" font-bold text-5xl text-main_color  ">My Amazing Works</p>
       <p className="w-[80%] sm:w-[30%] m-auto">
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
