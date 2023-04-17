@@ -2,8 +2,6 @@ import arrow_img from "/src/assets/try-out-arrow.svg";
 import { FaLink } from "react-icons/fa";
 import { RiZoomInFill } from "react-icons/ri";
 import { useState } from "react";
-import Modal from "react-modal";
-
 import work_image_1 from "../assets/capture_quizapp.png";
 import work_image_2 from "../assets/capture_programiz.png";
 import work_image_3 from "../assets/capture_weather.png";
