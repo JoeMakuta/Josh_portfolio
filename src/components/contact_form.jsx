@@ -3,8 +3,9 @@ import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
 import { Button, Col, Form, Input, Row, Select, theme } from "antd";
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 // import toast, { Toaster } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
+
 const { Option } = Select;
 
 const SpanStar = () => {
@@ -35,7 +36,7 @@ const Contact_form = () => {
   const [lName, setLname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const handleFName = (e) => {
     if (!e.target.value.match(nameRegex)) {
@@ -76,7 +77,15 @@ const Contact_form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // toast.success("Submit success");
-    if (!errors.name && !errors.email && !errors.message) {
+    if (
+      !errors.name &&
+      !errors.email &&
+      !errors.message &&
+      fName != "" &&
+      lName != "" &&
+      message != ""
+    ) {
+      setLoading(true);
       await emailjs
         .send(
           "service_4g0obkx",
@@ -86,9 +95,11 @@ const Contact_form = () => {
         )
         .then((data) => {
           console.log(data, "Success");
+          setLoading(false);
         })
         .catch((error) => {
           console.log(error, "failure");
+          setLoading(false);
         });
     } else {
     }
@@ -139,7 +150,7 @@ const Contact_form = () => {
         </p>
         <input
           onChange={handleEmail}
-          type="text"
+          type="email"
           className=" w-[100%] text-xs h-8 p-3"
           placeholder="exemple@exemple.exemple"
         />{" "}
@@ -166,11 +177,17 @@ const Contact_form = () => {
         type="submit"
         className={
           btn_styles +
-          "w-full rounded-lg flex justify-center items-center gap-4 mt-4 cursor-not-allowed "
+          "w-full rounded-lg flex justify-center items-center gap-4 mt-4"
         }
       >
-        <h1>Send</h1>
-        <FiSend />
+        {loading ? (
+          <h1>Sending ...</h1>
+        ) : (
+          <div className=" flex justify-center items-center gap-4  ">
+            <h1>Send</h1>
+            <FiSend />
+          </div>
+        )}
       </button>
     </form>
   );
